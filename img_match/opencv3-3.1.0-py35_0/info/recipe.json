@@ -1,0 +1,53 @@
+{
+  "about": {
+    "home": "http://opencv.org/",
+    "license": "BSD"
+  },
+  "app": {},
+  "build": {
+    "entry_points": [],
+    "features": [],
+    "script_env": [],
+    "string": "",
+    "track_features": []
+  },
+  "package": {
+    "name": "opencv3",
+    "version": "3.1.0"
+  },
+  "requirements": {
+    "build": [
+      "python",
+      "cmake",
+      "numpy",
+      "eigen 3.2.7"
+    ],
+    "conflicts": [],
+    "run": [
+      "python",
+      "numpy"
+    ]
+  },
+  "source": {
+    "fn": "opencv-3.1.0.tar.gz",
+    "git_rev": "",
+    "md5": "",
+    "patches": [
+      "cap_mpjpeg_decoder.patch",
+      "no_rpath.patch"
+    ],
+    "path": "",
+    "sha256": "f00b3c4f42acda07d89031a2ebb5ebe390764a133502c03a511f67b78bbd4fbf",
+    "svn_rev": "",
+    "url": "https://github.com/Itseez/opencv/archive/3.1.0.tar.gz"
+  },
+  "test": {
+    "commands": [],
+    "files": [],
+    "imports": [
+      "cv2",
+      "cv2.xfeatures2d"
+    ],
+    "requires": []
+  }
+}
