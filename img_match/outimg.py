@@ -7,12 +7,16 @@ import os
 
 # img_path = sys.argv[1]
 # img_path2 = sys.argv[2]
-img_path = os.path.abspath(os.path.dirname(__file__)) + '/images_org/01.png'
-img_path2 = os.path.abspath(os.path.dirname(__file__)) + '/images_org/02.png'
+# img_path = os.path.abspath(os.path.dirname(__file__)) + '/images_org/01.png'
+# img_path2 = os.path.abspath(os.path.dirname(__file__)) + '/images_org/02.png'
+img_path = os.path.abspath(os.path.dirname(__file__)) + '/kanzi/1004.png'
+img_path2 = os.path.abspath(os.path.dirname(__file__)) + '/kanzi/1001.png'
+IMG_SIZE = (200, 200)
 
 img = cv2.imread(img_path)
 img2 = cv2.imread(img_path2)
 img = cv2.resize(img, IMG_SIZE)
+img2 = cv2.resize(img2, IMG_SIZE)
 gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 gray2 = cv2.cvtColor(img2, cv2.COLOR_BGR2GRAY)
 
