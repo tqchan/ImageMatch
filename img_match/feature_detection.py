@@ -5,7 +5,7 @@
 import cv2
 import os
 
-TARGET_FILE = '2001.png'
+TARGET_FILE = '1001.png'
 IMG_DIR = os.path.abspath(os.path.dirname(__file__)) + '/kanzi/'
 IMG_SIZE = (200, 200)
 
