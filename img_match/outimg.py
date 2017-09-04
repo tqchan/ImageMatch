@@ -9,8 +9,8 @@ import os
 # img_path2 = sys.argv[2]
 # img_path = os.path.abspath(os.path.dirname(__file__)) + '/images_org/01.png'
 # img_path2 = os.path.abspath(os.path.dirname(__file__)) + '/images_org/02.png'
-img_path = os.path.abspath(os.path.dirname(__file__)) + '/kanzi/1004.png'
-img_path2 = os.path.abspath(os.path.dirname(__file__)) + '/kanzi/1001.png'
+img_path = os.path.abspath(os.path.dirname(__file__)) + '/kanzi/2001.png'
+img_path2 = os.path.abspath(os.path.dirname(__file__)) + '/kanzi/2002.png'
 IMG_SIZE = (200, 200)
 
 img = cv2.imread(img_path)

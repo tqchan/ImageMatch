@@ -5,14 +5,13 @@
 import cv2
 import os
 
-TARGET_FILE = '1003.png'
+TARGET_FILE = '2001.png'
 IMG_DIR = os.path.abspath(os.path.dirname(__file__)) + '/kanzi/'
 IMG_SIZE = (200, 200)
 
 target_img_path = IMG_DIR + TARGET_FILE
 target_img = cv2.imread(target_img_path, cv2.IMREAD_GRAYSCALE)
 target_img = cv2.resize(target_img, IMG_SIZE)
-
 bf = cv2.BFMatcher(cv2.NORM_HAMMING)
 detector = cv2.ORB_create()
 # detector = cv2.AKAZE_create()
